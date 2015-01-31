@@ -25,7 +25,7 @@ for f in $( find "$tehTmpDir" -mindepth 1 \! -name 'tmp' ); do
   maybeUnzip "$f" "$tehTmpDir/tmp"
   cat "$f"
 done |\
-  grep '<img src="http://img.batoto.net/comics/[0-9]' |\
+  grep '<img src="http://img.bato.to/comics/[0-9]' |\
   cut -d '"' -f 2 |\
   wget -nv -i -
 
